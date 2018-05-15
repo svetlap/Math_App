@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.svetla.math_app">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Student_Dashboard" />
+        <activity android:name=".Parent_Dashboard" />
+        <activity android:name=".Teacher_Dashboard" />
+        <activity
+            android:name=".Student_Objectives"
+            android:label="@string/title_activity_student__objectives"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Student_Section" />
+        <activity android:name=".Student_Award" />
+        <activity android:name=".Student_SectionProblems" />
+        <activity android:name=".Student_SectionTheory" />
+        <activity android:name=".Student_InterestingStuff" />
+        <activity android:name=".Question_Acvitity" />
+        <activity android:name=".Teacher_ProblemView" />
+        <activity android:name=".Results_Activity" />
+        <activity android:name=".Puzzles_Activity"></activity>
+    </application>
+
+</manifest>
